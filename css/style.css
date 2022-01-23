@@ -1,0 +1,89 @@
+:root {
+    --primary: #b6957c;
+    --secondary: #ffede0;
+
+    --very-dark-blue: #1d2025;
+    --dark-grayish-blue: #68707d;
+    --grayish-blue: #b6bcc8 ;
+    --light-grayish:  #f7f8fd;
+    --white: #ffffff;
+    --black-light: rgba(0, 0, 0, 0.75);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+/* --------------------------- */
+/* UTILITIES CLASSES */
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+
+
+/* -------------------------------- */
+/* HEADER */
+
+.header{
+    margin-top: 3rem;
+}
+
+.header-box {
+    padding-bottom: 3.2rem;
+ border-bottom: .8px solid rgba(129, 127, 127, 0.3);
+} 
+
+.nav {
+    margin-right: auto;
+    gap: 3rem;
+}
+
+.nav__link {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+}
+
+.logo{
+    margin-right: 5rem;
+}
+
+.cart-icon {
+    margin-right: 4rem;
+}
+
+.user {
+    height: 4.5rem;
+    width: 4.5rem;
+}
