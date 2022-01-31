@@ -11,14 +11,75 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Aditya Singh E-commerce product page</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
+    <div class="lightbox">
+      <div class="lightbox-container">
+        <div class="lightbox__images">
+          <img
+            src="images/image-product-1.jpg"
+            alt=""
+            class="lightbox__image lightbox__image--1 active"
+          /><img
+            src="images/image-product-2.jpg"
+            alt=""
+            class="lightbox__image lightbox__image--2"
+          /><img
+            src="images/image-product-3.jpg"
+            alt=""
+            class="lightbox__image lightbox__image--3"
+          /><img
+            src="images/image-product-4.jpg"
+            alt=""
+            class="lightbox__image lightbox__image--4"
+          />
+
+          <img
+            src="images/icon-previous.svg"
+            alt="icon previous"
+            class="icon-previous"
+          />
+          <img src="images/icon-next.svg" alt="icon next" class="icon-next" />
+          <img
+            src="images/icon-close.svg"
+            alt="close icon"
+            class="icon-close"
+          />
+        </div>
+        <div class="lightbox__thumbnails">
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            alt=""
+            class="lightbox__thumbnail lightbox__thumbnail--1"
+          /><img
+            src="images/image-product-2-thumbnail.jpg"
+            alt=""
+            class="lightbox__thumbnail lightbox__thumbnail--2"
+          /><img
+            src="images/image-product-3-thumbnail.jpg"
+            alt=""
+            class="lightbox__thumbnail lightbox__thumbnail--3"
+          /><img
+            src="images/image-product-4-thumbnail.jpg"
+            alt=""
+            class="lightbox__thumbnail lightbox__thumbnail--4"
+          />
+        </div>
+      </div>
+    </div>
+
     <header class="header">
       <div class="container">
         <div class="header-box flex align-center">
@@ -30,16 +91,121 @@
             <a href="#" class="nav__link">About</a>
             <a href="#" class="nav__link">Contact</a>
           </nav>
-          <img src="images/icon-cart.svg" alt="icon of cart" class="cart-icon" />
+          <img
+            src="images/icon-cart.svg"
+            alt="icon of cart"
+            class="cart-icon"
+          />
           <img src="images/image-avatar.png" alt="avatar" class="user" />
+          <div class="basket">
+            <p>Cart</p>
+            <p>Your Cart is empty</p>
+            <div class="cart-item">
+              <img src="images/image-product-1.jpg" alt="" />
+              <div class="cart-item-description">
+                <h3>Fall Limited Edition Sneakers</h3>
+                <div class="cart-item-data">
+                  <div class="cart-item-price">$125.00</div>
+                  <div>x</div>
+                  <div class="cart-item-number">3</div>
+                  <div class="total-cost">$375.00</div>
+                </div>
+              </div>
+              <img
+                class="icon-delete"
+                src="images/icon-delete.svg"
+                alt="icon delete"
+              />
+            </div>
+            <div class="btn-checkout-box">
+              <button class="btn-atc btn-checkout">Checkout</button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <div class="product">
-      <div class="container"></div>
+      <div class="container">
+        <div class="product-box grid">
+          <div class="product-images-box">
+            <div class="product-images">
+              <img
+                src="images/image-product-1.jpg"
+                alt=""
+                class="product__image product__image--1 active"
+              />
+              <img
+                src="images/image-product-2.jpg"
+                alt=""
+                class="product__image product__image--2"
+              />
+              <img
+                src="images/image-product-3.jpg"
+                alt=""
+                class="product__image product__image--3"
+              />
+              <img
+                src="images/image-product-4.jpg"
+                alt=""
+                class="product__image product__image--4"
+              />
+            </div>
+            <div class="product-image-thumbnail grid">
+              <img
+                src="images/image-product-1-thumbnail.jpg"
+                alt=""
+                class="image__thumbnail image__thumbnail--1"
+              /><img
+                src="images/image-product-2-thumbnail.jpg"
+                alt=""
+                class="image__thumbnail image__thumbnail--2"
+              /><img
+                src="images/image-product-3-thumbnail.jpg"
+                alt=""
+                class="image__thumbnail image__thumbnail--3"
+              /><img
+                src="images/image-product-4-thumbnail.jpg"
+                alt=""
+                class="image__thumbnail image__thumbnail--4"
+              />
+            </div>
+          </div>
+          <div class="product-text-box">
+            <h2 class="product-company">SNEAKER COMPANY</h2>
+            <h1 class="product-name">Fall Limited Edition Sneakers</h1>
+            <p class="product-description">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <p class="product-price"><span> $125.00</span> <span>50%</span></p>
+            <p class="initial-price">$250.00</p>
+
+            <div class="add-to-cart flex">
+              <div class="product-counter flex align-center">
+                <img
+                  class="icon-minus"
+                  src="images/icon-minus.svg"
+                  alt="minus icon"
+                />
+                <p class="product-count">0</p>
+                <img
+                  class="icon-plus"
+                  src="images/icon-plus.svg"
+                  alt="plus icon"
+                />
+              </div>
+              <button class="btn btn-atc">
+                <img src="images/icon-cart-white.svg" alt="" />
+                <span>Add to cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- 
+    <!--
   Collections
   Men
   Women
@@ -59,5 +225,6 @@
 
   0
   Add to cart -->
+    <script src="js/script.js"></script>
   </body>
 </html>
