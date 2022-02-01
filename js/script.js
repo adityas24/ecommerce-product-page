@@ -7,6 +7,7 @@ const btn_atc = document.querySelector(".btn-atc");
 const basket = document.querySelector(".basket");
 const empty_cart = document.querySelector(".empty-cart");
 const cart_icon = document.querySelector(".cart-icon");
+const cart_icon_box = document.querySelector(".cart-icon-box");
 let items = 0;
 
 minusIcon.addEventListener("click", () => {
@@ -27,6 +28,11 @@ btn_atc.addEventListener("click", () => {
     document.querySelector(".btn-checkout-box").remove();
   }
   empty_cart.style.display = "none";
+
+  cart_icon_box.insertAdjacentHTML(
+    "beforeend",
+    `<span class="item-count-icon">${items}</span>`
+  );
 
   basket.insertAdjacentHTML(
     "beforeend",
@@ -57,6 +63,7 @@ btn_atc.addEventListener("click", () => {
     empty_cart.style.display = "block";
     document.querySelector(".cart-item").remove();
     document.querySelector(".btn-checkout-box").remove();
+    document.querySelector('.item-count-icon').remove();
   });
 });
 
