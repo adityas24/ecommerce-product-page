@@ -54,6 +54,14 @@ body {
   display: grid;
 }
 
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
 /* -------------------------------- */
 /* HEADER */
 
@@ -117,7 +125,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 
 .cart-item {
@@ -160,6 +167,10 @@ body {
 
 .btn-checkout {
   width: 85%;
+}
+
+.icon-delete {
+  cursor: pointer;
 }
 
 /*-------------------------------  */
@@ -268,6 +279,11 @@ body {
 .product-counter img {
   cursor: pointer;
 }
+
+.btn {
+  cursor: pointer;
+}
+
 .btn-atc {
   min-width: 55%;
   display: flex;
