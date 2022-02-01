@@ -91,9 +91,31 @@ body {
   cursor: pointer;
 }
 
+.cart-icon-box {
+  position: relative;
+}
+
 .cart-icon {
   margin-right: 4rem;
   cursor: pointer;
+}
+
+.item-count-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  top: -12px;
+  right: 33px;
+
 }
 
 .user {
