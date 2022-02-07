@@ -115,7 +115,6 @@ body {
   position: absolute;
   top: -12px;
   right: 33px;
-
 }
 
 .user {
@@ -152,7 +151,7 @@ body {
 .cart-item {
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr 5fr .35fr;
+  grid-template-columns: 1fr 5fr 0.35fr;
   align-items: center;
   font-size: 1.6rem;
   font-weight: 400;
@@ -207,7 +206,7 @@ body {
   align-self: center;
 }
 
-.product-images {
+.product__images {
   margin-bottom: 2.5rem;
 }
 
@@ -215,12 +214,17 @@ body {
   display: none;
   width: 80%;
   border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.product__image--active {
+  display: block;
+  opacity: 1;
 }
 
 /* ----------------------------- active -------------------------- */
-.product__image.active {
-  display: block;
-}
 
 .product-image-thumbnail {
   grid-template-columns: repeat(4, 1fr);
@@ -231,6 +235,7 @@ body {
 .image__thumbnail {
   width: 100%;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /* -------------- */

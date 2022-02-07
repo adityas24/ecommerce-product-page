@@ -63,10 +63,30 @@ btn_atc.addEventListener("click", () => {
     empty_cart.style.display = "block";
     document.querySelector(".cart-item").remove();
     document.querySelector(".btn-checkout-box").remove();
-    document.querySelector('.item-count-icon').remove();
+    document.querySelector(".item-count-icon").remove();
   });
 });
 
 cart_icon.addEventListener("click", () => {
   basket.classList.toggle("display-none");
+});
+
+// ---------- IMAGES IMPLEMENTATION ----------- //
+
+const product__images = document.querySelectorAll(".product__image");
+// const product_thumbnails = document.querySelectorAll('.image__thumbnail')
+const product__thumbnails_container = document.querySelector(
+  ".product-image-thumbnail"
+);
+
+product__thumbnails_container.addEventListener("click", function (e) {
+  const clicked = e.target.closest('.image__thumbnail');
+  if(!clicked) return;
+  product__images.forEach((img) =>
+    img.classList.remove("product__image--active")
+  );
+
+  document
+    .querySelector(`.product__image--${e.target.dataset.thumbnail}`)
+    .classList.add("product__image--active");
 });
