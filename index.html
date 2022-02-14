@@ -31,7 +31,7 @@
           <img
             src="images/image-product-1.jpg"
             alt=""
-            class="lightbox__image lightbox__image--1 active"
+            class="lightbox__image lightbox__image--1 lightbox__image--active"
           /><img
             src="images/image-product-2.jpg"
             alt=""
@@ -63,18 +63,22 @@
             src="images/image-product-1-thumbnail.jpg"
             alt=""
             class="lightbox__thumbnail lightbox__thumbnail--1"
+            data-thumbnail="1"
           /><img
             src="images/image-product-2-thumbnail.jpg"
             alt=""
             class="lightbox__thumbnail lightbox__thumbnail--2"
+            data-thumbnail="2"
           /><img
             src="images/image-product-3-thumbnail.jpg"
             alt=""
             class="lightbox__thumbnail lightbox__thumbnail--3"
+            data-thumbnail="3"
           /><img
             src="images/image-product-4-thumbnail.jpg"
             alt=""
             class="lightbox__thumbnail lightbox__thumbnail--4"
+            data-thumbnail="4"
           />
         </div>
       </div>
@@ -135,27 +139,38 @@
               />
             </div>
             <div class="product-image-thumbnail grid">
-              <img
-                src="images/image-product-1-thumbnail.jpg"
-                alt=""
-                class="image__thumbnail "
-                data-thumbnail="1"
-              /><img
-                src="images/image-product-2-thumbnail.jpg"
-                alt=""
-                class="image__thumbnail "
-                data-thumbnail="2"
-              /><img
-                src="images/image-product-3-thumbnail.jpg"
-                alt=""
-                class="image__thumbnail"
-                data-thumbnail="3"
-              /><img
-                src="images/image-product-4-thumbnail.jpg"
-                alt=""
-                class="image__thumbnail "
-                data-thumbnail="4"
-              />
+              <div class="thumbnail__box thumbnail__box--border">
+                <img
+                  src="images/image-product-1-thumbnail.jpg"
+                  alt=""
+                  class="image__thumbnail thumbnail-highlight"
+                  data-thumbnail="1"
+                />
+              </div>
+              <div class="thumbnail__box ">
+                <img
+                  src="images/image-product-2-thumbnail.jpg"
+                  alt=""
+                  class="image__thumbnail"
+                  data-thumbnail="2"
+                />
+              </div>
+              <div class="thumbnail__box">
+                <img
+                  src="images/image-product-3-thumbnail.jpg"
+                  alt=""
+                  class="image__thumbnail"
+                  data-thumbnail="3"
+                />
+              </div>
+              <div class="thumbnail__box">
+                <img
+                  src="images/image-product-4-thumbnail.jpg"
+                  alt=""
+                  class="image__thumbnail"
+                  data-thumbnail="4"
+                />
+              </div>
             </div>
           </div>
           <div class="product-text-box">
